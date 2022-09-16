@@ -1,0 +1,135 @@
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pp_page_block {
+    height: 100vh;
+    background-color: #EEEEEE;
+    position: relative;
+}
+
+.pp_block {
+    display: flex;
+    height: 100vh;
+    position: absolute;
+}
+
+.pp_block_menu {
+    justify-content: center;
+    width: 100vw;
+    color: gray;
+}
+
+.pp_block_menu_bottom {
+    align-items: end;
+}
+
+.pp_block_menu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+}
+
+.pp_menu_item_left {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.pp_menu_item_right {
+    padding-top: 2em;
+    padding-right: 2em;
+}
+
+.pp_block_menu_bottom .pp_menu_item_left,
+.pp_block_menu_bottom .pp_menu_item_right  {
+    padding-top: 0em;
+    padding-bottom: 2em;
+}
+
+.pp_menu_item_orage {
+    color: #F63716;
+    letter-spacing: 0.32em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pp_menu_item_gray {
+    color: #C2C1C1;
+    letter-spacing: 0.23em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pp_menu_item_right img {
+    margin-left: 1.5em;
+    height: 1em;
+}
+
+.pp_block_center {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.pp_center_text {
+    color: #C2C1C1;
+    text-align: center;
+    font-size: 9.1em;
+    font-weight: 900;
+    letter-spacing: 1.12em;
+    opacity: 0.2;
+    align-self: center;
+    width: 85vw;
+    overflow: hidden;
+}
+
+.pp_center_img {
+    width: 17em;
+    height: 34.8em;
+    background-repeat: no-repeat;
+    background-image: url("../img/papaya.png");
+    background-size: cover;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.pp_left_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    font-size: 1em;
+    color: #F63716;
+    letter-spacing: 0.32em;
+}
+
+.pp_right_text {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75em;
+    color: #C2C1C1;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-left: 40em;
+    padding-top: 4em;
+}
+
+.pp_right_text div {
+    margin-bottom: 3em;
+}
+
+
+@media (min-width:320px)  { body { font-size: 6px;}  }
+@media (min-width:480px)  { body { font-size: 8px;}  }
+@media (min-width:600px)  { body { font-size: 10px;}  }
+@media (min-width:801px)  { body { font-size: 12px;}  }
+@media (min-width:1025px) { body { font-size: 16px;}  }
+@media (min-width:1281px) { body { font-size: 20px;}  }

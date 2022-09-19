@@ -357,6 +357,239 @@ body {
     width: 18em;
 }
 
+.pp_token_page_wrapper {
+    height: 35em;
+    width: 70em;
+    position: relative;
+}
+
+.pp_token_text {
+    position: absolute;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    color: #8B8A8A;
+}
+
+.pp_token_text1 {
+    width: 35em;
+    top: 0em;
+    left: 30em;
+}
+
+.pp_token_text2 {
+    top: 4em;
+    left: 35em;
+}
+
+.pp_token_text3 {
+    top: 6.5em;
+    left: 25em;
+}
+
+.pp_token_text4 {
+    width: 30em;
+    top: 12em;
+    left: 0em;
+}
+
+.pp_token_text5 {
+    width: 32em;
+    top: 16.5em;
+    left: 12em;
+}
+
+.pp_token_text6 {
+    width: 32em;
+    top: 22.5em;
+    left: 24em;
+}
+
+.pp_token_img1 img {
+    width: 9.1em;
+    height: 1.65em;
+}
+
+.pp_token_img2 img {
+    width: 2.47em;
+    height: 2em;
+}
+
+.pp_token_img3 img {
+    width: 10.66em;
+    height: 8.645em;
+}
+
+.pp_token_img1 {
+    position: absolute;
+    top: 2.5em;
+    left: 5em;
+}
+
+.pp_token_img2 {
+    position: absolute;
+    top: 2.5em;
+    left: 16em;
+}
+
+.pp_token_img3 {
+    position: absolute;
+    top: 15em;
+    left: 43.5em;
+}
+
+.pp_dashboard {
+    display: flex;
+    justify-content: center;
+    width: 70em;
+}
+
+
+.pp_dashboard_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15.25em;
+    min-height: 15.25em;
+    max-width: 15.25em;
+    max-height: 15.25em;
+    border-radius: 50%;
+    background: #EEEEEE;
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+}
+
+.pp_dashboard_circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.28em;
+    height: 13.28em;
+    border-radius: 50%;
+    background: #DFDFDF;
+}
+
+.pp_dashboard_circle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.28em;
+    height: 13.28em;
+    border-radius: 50%;
+    --value: 75%;
+    background: conic-gradient(#F63716 var(--value), transparent 0);
+}
+
+.pp_dashboard_circle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11.28em;
+    height: 11.28em;
+    background: #EEEEEE;
+    border-radius: 50%;
+}
+
+.pp_dashboard_circle_text {
+    width: 8em;
+    height: 8em;
+}
+
+.pp_dashboard_circle_text_title {
+    margin-top: 2em;
+    color: #8B8A8A;
+    font-size: 0.6em;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.pp_dashboard_circle_text_percent {
+    color: #F63716;
+    letter-spacing: 0.05em;
+    font-size: 2.6em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+.pp_dashboard_circle_text_bottom {
+    margin-top: 0.2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pp_dashboard_circle_text_bottom_img {
+    margin-top: -0.1em;
+}
+
+.pp_dashboard_circle_text_bottom_img img {
+    width: 0.6em;
+    height: 0.6em;
+}
+
+.pp_dashboard_circle_text_bottom_text {
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-weight: 700;
+    color: #F63716;
+}
+
+.pp_dashboard_sing {
+    color: #C2C1C1;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: right;
+    font-weight: 400;
+    margin-right: 1em;
+    margin-left: 5em;
+}
+
+.pp_dashboard_select {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30em;
+}
+
+.pp_dashboard_select_item {
+    width: 10em;
+    margin-right: 10em;
+    margin-bottom: 5em;
+    cursor: pointer;
+}
+
+.pp_dashboard_select_item:hover {
+    opacity: 0.8;
+}
+
+.pp_dashboard_select_item_nonselect {
+    width: 10em;
+    margin-right: 10em;
+    margin-bottom: 5em;
+    opacity: 0.3;
+    cursor: no-drop;
+}
+
+.pp_dashboard_select_item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.pp_dashboard_select_item_percent,
+.pp_dashboard_select_item_value,
+.pp_dashboard_select_item_text {
+    font-size: 1em;
+    color: #F63716;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+.pp_dashboard_select_item_text {
+    font-weight: 400;
+    color: #8B8A8A;
+}
+
+
 
 @media (min-width:320px)  { body { font-size: 6px;}  }
 @media (min-width:480px)  { body { font-size: 8px;}  }

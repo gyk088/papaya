@@ -33,6 +33,13 @@ body {
     color: gray;
 }
 
+.pp_block_top {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
 .pp_block_menu_bottom {
     align-items: end;
 }
@@ -40,7 +47,8 @@ body {
 .pp_block_menu_wrapper {
     display: flex;
     justify-content: space-between;
-    width: 85vw;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .pp_menu_item_left {
@@ -144,6 +152,11 @@ body {
     height: 1.3em;
 }
 
+.pp_slider_img {
+    width: 6.1em;
+    height: 1.3em;
+}
+
 .pp_opensea {
     width: 6.4em;
     height: 1.45em;
@@ -176,7 +189,15 @@ body {
 
 .pp_key_slider {
     display: flex;
+    overflow-x: scroll;
+    width: 80vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.pp_key_slider::-webkit-scrollbar {
+    display: none;
+  }
 
 .pp_key_slider img {
     width: 10.95em;

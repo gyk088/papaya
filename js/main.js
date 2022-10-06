@@ -4,7 +4,7 @@ function main() {
     dashbord();
     selectGlobalVar();
     keySlider();
-    changeMenu();
+    // changeMenu();
 }
 
 function selectGlobalVar() {
@@ -76,12 +76,83 @@ function keySlider() {
     runSlider();
 }
 
-
 function changeMenu() {
+    const menuText = document.querySelector("#menu_text_new");
+    const pageAbout = document.querySelector(".page_about");
+    const pagePartners = document.querySelector(".page_partners");
+    const pageNft = document.querySelector(".page_nft");
+    const pageRoadmap = document.querySelector(".page_roadmap");
+    const pageTokenomic = document.querySelector(".page_tokenomic");
+    const pageTeam = document.querySelector(".page_team");
+    let currentText = 'About';
+
+    const topAnimation = menuText.animate(
+        [{ transform: "translateY(200%)" }, { transform: "translateY(0%)" }],
+        {
+          fill: "forwards",
+          duration: 300,
+        }
+    )
+
+    const bottomAnimation = menuText.animate(
+        [{ transform: "translateY(0%)" }, { transform: "translateY(-200%)" }],
+        {
+          fill: "forwards",
+          duration: 300,
+        }
+    )
+
+    let scrollTop = 0;
+    let movToTop = false;
+
+    function play(movToTop, currentText) {
+        if (currentText != menuText.innerText) {
+            movToTop ? topAnimation.play() : bottomAnimation.play();
+        }
+    }
+
+    function delAnimation() {
+        // menuBlockNew.classList.remove("menu_anmation");
+        // menuBlockOld.classList.remove("menu_anmation");
+    }
+
 
     document.addEventListener("scroll", function(e){
-        console.log(e)
-        console.log(e.target.scrollingElement.scrollTop)
-
+        if (e.target.scrollingElement.scrollTop > scrollTop) {
+            movToTop = false;
+        } else {
+            movToTop = true;
+        }
+        scrollTop = e.target.scrollingElement.scrollTop;
+        if (scrollTop > pageAbout.offsetTop && scrollTop < pageAbout.offsetTop + pageAbout.offsetHeight) {
+            currentText = 'About';
+            play(movToTop, currentText);
+            menuText.innerText = 'About';
+        } else if (scrollTop > pagePartners.offsetTop && scrollTop < pagePartners.offsetTop + pagePartners.offsetHeight) {
+            currentText = 'Partners';
+            play(movToTop, currentText);
+            menuText.innerText = 'Partners';
+        } else if (scrollTop > pageRoadmap.offsetTop && scrollTop < pageRoadmap.offsetTop + pageRoadmap.offsetHeight) {
+            menuText.innerText = 'Roadmap';
+            newAnimation.play();
+            oldAnimation.play();
+            currentText = 'About';
+            play(movToTop, currentText);
+            menuText.innerText = 'About';
+        } else if (scrollTop > pageTokenomic.offsetTop && scrollTop < pageTokenomic.offsetTop + pageTokenomic.offsetHeight) {
+            menuText.innerText = 'Tokenomic';
+            newAnimation.play();
+            oldAnimation.play();
+            currentText = 'About';
+            play(movToTop, currentText);
+            menuText.innerText = 'About';
+        } else if (scrollTop > pageTeam.offsetTop && scrollTop < pageTeam.offsetTop + pageTeam.offsetHeight) {
+            menuText.innerText = 'Team';
+            newAnimation.play();
+            oldAnimation.play();
+            currentText = 'About';
+            play(movToTop, currentText);
+            menuText.innerText = 'About';
+        }
     });
 }
